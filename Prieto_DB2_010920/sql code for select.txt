@@ -1,0 +1,17 @@
+2.
+SELECT * FROM pg_catalog.pg_tables WHERE schemaname = 'prieto-010920'
+3.
+SELECT dept_code,dept_name,school_code
+FROM "prieto-010920".department WHERE school_code = 'BUS'
+4.
+SELECT dept_code,crs_description
+FROM "prieto-010920".course WHERE crs_credit = '3' 
+5
+SELECT class_section
+FROM "prieto-010920".class WHERE crs_code = 'CIS-220'
+6
+SELECT emp_lname,emp_fname,emp_initial
+FROM "prieto-010920".employee WHERE emp_jobcode = 'TECH'
+7
+SELECT emp_jobcode, dept_code, prof_high_degree
+FROM "prieto-010920".professor,"prieto-010920".employee  WHERE dept_code = 'CIS'
